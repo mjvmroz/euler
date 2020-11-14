@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: e9a4893299b3671c51d24148677edf2e174a93fa859a236103e8e2677fffab4f
+-- hash: 712835814d267fdfda683cfcbf7823bf424eb648fc8c466021f1674d8fa63e26
 
 name:           euler
 version:        0.1.0.0
@@ -36,6 +36,8 @@ library
       Problems.P0004
       Problems.P0005
       Problems.P0006
+      Problems.P0007
+      Problems.P0008
   other-modules:
       Paths_euler
   hs-source-dirs:

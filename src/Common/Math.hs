@@ -56,3 +56,12 @@ lowestCommonMultiple xs = product unionCompositeFactors
         allFactorCounts = fmap factorCounts xs
         unionPrimeFactors = foldl (Map.unionWith max) Map.empty allFactorCounts
         unionCompositeFactors = fmap (uncurry (^)) $ Map.toList unionPrimeFactors
+
+-- >>> digits 1234
+-- [1,2,3,4]
+digits :: Integral a => a -> [a]
+digits n = (calc rest) ++ [cur]
+    where
+        (rest, cur) = quotRem n 10
+        calc 0 = []
+        calc r = digits r
