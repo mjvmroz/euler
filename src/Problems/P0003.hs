@@ -22,4 +22,4 @@ largestPrimeFactor n = safeHead
     $ filter (n `dividesBy`)
     $ reverse
     $ takeWhile (\p -> p * p <= n)
-    $ primes
+    primes

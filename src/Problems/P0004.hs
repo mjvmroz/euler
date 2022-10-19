@@ -25,12 +25,10 @@ productPalindromes digits = search max max
                 rest
             where
                 product = x * y
-                rest = if y > x then
-                    search x (y - 1)
-                else if x > min then
-                    search (x - 1) max
-                else
-                    []
+                rest
+                  | y > x = search x (y - 1)
+                  | x > min = search (x - 1) max
+                  | otherwise = []
 
 isPalindrome :: Show a => a -> Bool
 isPalindrome i = str == reverse str

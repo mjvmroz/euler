@@ -8,3 +8,8 @@ In keeping with the rules of the project, only the first 100 solutions will be a
 Assuming I actually get that far, I'll maintain a private fork for all past that point.
 
 Solutions are [here](https://github.com/mirichan/euler/tree/master/src/Problems).
+
+## Prereqs
+
+- Haskell (recommended via [ghcup](https://www.haskell.org/ghcup/))
+  - Probably also LLVM since stack will want to build a specific version from source (I believe in you)

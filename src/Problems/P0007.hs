@@ -10,4 +10,5 @@ import Common.Math (primes)
 
 -- >>> solve 10001
 -- 104743
-solve n = head $ drop (n - 1) $ primes
+solve n = 
+    primes !! max 0 (n - 1)

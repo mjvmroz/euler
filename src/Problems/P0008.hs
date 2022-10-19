@@ -58,7 +58,7 @@ solve n z = maximum $ product <$> searchSpace
 -- >>> splitOn 0 [1,2,0,3,4,0,0,5,6]
 -- [[1,2],[3,4],[],[5,6]]
 splitOn :: Eq a => a -> [a] -> [[a]]
-splitOn t l = calc [] [] l
+splitOn t = calc [] []
     where
         calc acc cur [] = acc ++ [cur]
         calc acc cur rest =
@@ -75,11 +75,11 @@ splitOn t l = calc [] [] l
 -- >>> subseqs 3 [1,2]
 -- []
 subseqs :: Int -> [a] -> [[a]]
-subseqs z l = calc [] l
+subseqs z = calc []
     where
         calc acc []   = acc
         calc acc rest =
-            if (length cur) == z then
+            if length cur == z then
                 calc (acc ++ [cur]) (tail rest)
             else
                 acc

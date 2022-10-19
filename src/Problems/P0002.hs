@@ -26,4 +26,4 @@ fibSum :: Integer -> Integer
 fibSum max = sum
     $ filter even
     $ takeWhile (< max)
-    $ fibs
+    fibs

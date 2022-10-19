@@ -17,4 +17,6 @@ import Common.Math (primes)
 -- >>> solve 2000000
 -- 142913828922
 solve :: Integer -> Integer
-solve n = sum $ takeWhile (< n) primes
+solve n = sum
+    $ takeWhile (< n)
+    primes

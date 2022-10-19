@@ -1,19 +1,17 @@
 cabal-version: 1.12
 
--- This file has been generated from package.yaml by hpack version 0.33.0.
+-- This file has been generated from package.yaml by hpack version 0.34.4.
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: 343833ee13c97869ee4079dcf65955b04189d76bf31087858cb4f5605245ac64
+-- hash: b173239d44cd3c212d38a5c71eb5279b42028074b8ff2b07156d2b756174e1bc
 
 name:           euler
 version:        0.1.0.0
 description:    Please see the README on GitHub at <https://github.com/githubuser/euler#readme>
-homepage:       https://github.com/githubuser/euler#readme
-bug-reports:    https://github.com/githubuser/euler/issues
-author:         Author name here
-maintainer:     example@example.com
-copyright:      2020 Author name here
+homepage:       https://github.com/mjvmroz/lenny
+bug-reports:    https://github.com/mjvmroz/lenny/issues
+author:         Michael Mroz
 license:        BSD3
 license-file:   LICENSE
 build-type:     Simple
@@ -23,7 +21,7 @@ extra-source-files:
 
 source-repository head
   type: git
-  location: https://github.com/githubuser/euler
+  location: https://github.com/mjvmroz/lenny
 
 library
   exposed-modules:
@@ -40,6 +38,7 @@ library
       Problems.P0008
       Problems.P0009
       Problems.P0010
+      Problems.P0011
   other-modules:
       Paths_euler
   hs-source-dirs:
