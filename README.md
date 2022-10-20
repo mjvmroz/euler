@@ -1,6 +1,6 @@
 # lenny
 
-Project Euler solutions. I am bad at both math and haskell, so this is likely to go poorly.
+[Project Euler](https://projecteuler.net/) solutions. I am bad at both math and haskell, so this is likely to go poorly.
 In general I am trying to solve things well mathematically and implement efficient algorithms
 rather than just brute-force, though my resolve is frequently tested and broken.
 
